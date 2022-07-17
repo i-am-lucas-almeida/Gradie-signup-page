@@ -1,0 +1,31 @@
+@import '../variables.css';
+
+.container__image {
+    height: 100%;
+    width: 50%;
+    background-color: var(--pale-green);
+    border-radius: 1rem 0 0 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.container__image_text {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.container__image_text>h1 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.container__image_text>p {
+    color: #339abc;
+}
+
+.container__image_image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

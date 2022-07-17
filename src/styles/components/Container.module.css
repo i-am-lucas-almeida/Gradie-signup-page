@@ -1,0 +1,9 @@
+@import '../variables.css';
+
+.container {
+    max-width: 100%;
+    width: 60rem;
+    height: 40rem;
+    display: flex;
+    align-items: flex-end;
+}

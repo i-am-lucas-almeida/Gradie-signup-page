@@ -1,0 +1,93 @@
+@import '../variables.css';
+
+.form {
+    height: 100%;
+    width: 50%;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 3rem;
+    border: 1px solid var(--soft-gray);
+    border-left: none;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2rem;
+}
+
+fieldset>label {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+fieldset>input {
+    margin-top: .5rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1.2px solid var(--soft-gray);
+    border-radius: .3rem;
+    color: var(--dark-gray);
+    font-family: inherit;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+fieldset>input:focus {
+    border-color: var(--dark-gray);
+}
+
+.form__terms {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form__terms>input {
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.form__terms>p {
+    width: 100%;
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.form__terms>p>a {
+    color: var(--pale-green);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form>button {
+    width: 100%;
+    background-color: var(--pale-green);
+    color: var(--white);
+    font-weight: 500;
+    font-family: inherit;
+    padding: 1.2rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form>button:hover {
+    opacity: .9;
+}
+
+.form__error {
+    border-color: var(--red) !important;
+}
+
+.form__error::placeholder {
+    color: var(--red) !important;
+}
